@@ -1,0 +1,21 @@
+.intro {
+    margin-bottom: 3rem ;
+    display: flex;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0.1rem black;
+}
+.intro__text {
+    padding: 1rem;
+    align-self: center;
+}
+.intro__title {
+    text-align: center;
+}
+.intro__img__container {
+    
+}
+.intro__img__container img{
+    width: 350px;
+}

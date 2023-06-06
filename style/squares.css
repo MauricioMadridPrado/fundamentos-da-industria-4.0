@@ -1,0 +1,32 @@
+.square__container {
+  margin-top: 3rem;
+  margin-bottom: -1px;
+  display: flex;
+  gap: 1rem;
+}
+
+.square {
+  content: " ";
+  width: 100px;
+  height: 50px;
+  border: 1px black solid;
+  cursor: pointer;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.square:hover {
+    box-shadow: 0 0 0.5rem 0.1rem black;
+    font-weight: bold;
+}
+
+.square:active {
+    box-shadow: 0 0 0.8rem 0.3rem black;
+}
+.first {
+}
+.second {
+}
+.third {
+}
+.fourth {
+}

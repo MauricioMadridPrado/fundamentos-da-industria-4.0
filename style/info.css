@@ -1,0 +1,20 @@
+.info__container {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem 0.1rem black;
+}
+.info__list__container {
+  padding: 3rem;
+}
+.info__list__item {
+  margin: 2rem 0;
+}
+.info__list__title {
+}
+.info__list__content {
+}
+.info__list__content h4 {
+}
+.info__list__content li {
+}
