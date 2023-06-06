@@ -5,6 +5,7 @@
     border: 2px solid black;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem 0.1rem black;
+    height: 300px;
 }
 .intro__text {
     padding: 1rem;
