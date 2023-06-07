@@ -1,25 +1,24 @@
 import { content } from "./intro.js";
-const introContent = document.querySelector('[data-intro="content"]')
+export let n;
+const introContent = document.querySelector('[data-intro="content"]');
 
-const introSpin = [
-    { transform: "translateX(150px)" },
-    { transform: "translateX(0px)" },
-  ];
-  
-  const introTime = {
-    duration: 400,
-    iterations: 1,
-  };
-  
+const introSlide = [
+  { transform: "translateX(150px)" },
+  { transform: "translateX(0px)" },
+];
 
-export default function makeIntro(rev){
+const introTime = {
+  duration: 400,
+  iterations: 1,
+};
 
-    if(localStorage.getItem('rev') !== rev){
-    localStorage.setItem('rev', rev)
-    if(rev == 'primeiraRev')  introContent.innerHTML = content.primeiraRev;
-    if(rev == 'segundaRev')  introContent.innerHTML = content.segundaRev;
-    if(rev == 'terceiraRev')  introContent.innerHTML = content.terceiraRev;
-    if(rev == 'quartaRev')  introContent.innerHTML = content.quartaRev;
-    introContent.animate(introSpin, introTime)
+export default function makeIntro(rev) {
+  if (localStorage.getItem("rev") !== rev) {
+    localStorage.setItem("rev", rev);
+    if (rev == "primeiraRev") introContent.innerHTML = content.primeiraRev;
+    if (rev == "segundaRev") introContent.innerHTML = content.segundaRev;
+    if (rev == "terceiraRev") introContent.innerHTML = content.terceiraRev;
+    if (rev == "quartaRev") introContent.innerHTML = content.quartaRev;
+    introContent.animate(introSlide, introTime);
   }
 }

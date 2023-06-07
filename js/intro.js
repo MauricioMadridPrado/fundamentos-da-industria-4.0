@@ -1,6 +1,9 @@
+import { alterImg } from "./alterImg.js";
+
+setInterval(alterImg, 3000);
+let n = 1;
 export const content = {
-    primeiraRev:
-    `
+  primeiraRev: `
     <div class="intro__text">
           <h2 class="intro__title">Primeira revolução industrial</h2>
           <p>
@@ -12,14 +15,12 @@ export const content = {
         <div class="intro__img__container">
           <img
             class="intro__img"
-            src="./assets/img/primeira_rev_ind/img1.jpg"
+            src="./assets/img/primeira_rev_ind/img${n}.jpg"
             alt="imagem da revolução selecionada"
           />
         </div>
-    `
-    ,
-    segundaRev: 
-    `
+    `,
+  segundaRev: `
     <div class="intro__text">
     <h2 class="intro__title">Segunda revolução industrial</h2>
     <p>
@@ -29,13 +30,12 @@ export const content = {
   <div class="intro__img__container">
     <img
       class="intro__img"
-      src="./assets/img/segunda_rev_ind/img1.jpg"
+      src="./assets/img/segunda_rev_ind/img${n}.jpg"
       alt="imagem da revolução selecionada"
     />
   </div>
     `,
-    terceiraRev: 
-    `
+  terceiraRev: `
     <div class="intro__text">
     <h2 class="intro__title">Terceira revolução industrial</h2>
     <p>
@@ -46,13 +46,12 @@ export const content = {
   <div class="intro__img__container">
     <img
       class="intro__img"
-      src="./assets/img/terceira_rev_ind/img1.jpg"
+      src="./assets/img/terceira_rev_ind/img${n}.jpg"
       alt="imagem da revolução selecionada"
     />
   </div>
     `,
-    quartaRev: 
-    `
+  quartaRev: `
     <div class="intro__text">
     <h2 class="intro__title">Quarta revolução industrial</h2>
     <p>
@@ -67,5 +66,4 @@ export const content = {
     />
   </div>
     `,
-}
-
+};
