@@ -3,13 +3,10 @@ let n = 0;
 let l;
 
 export function alterImg() {
-    if (n == 3) {
-      l = "Y";
-      n = 1;
-    } else {
-      l = "X";
-      +n++;
-    }
-  
+
+     (n == 4) ? n = 1: +n++;
+     (n == 2 || n == 4) ? l = 'X' : l = 'Y' 
+    
+     console.log(n)
     addImage(n, l);
   }
