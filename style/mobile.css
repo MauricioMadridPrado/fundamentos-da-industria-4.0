@@ -1,0 +1,16 @@
+@media (max-width: 750px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro__img__container img{
+        width: 300px;
+        margin-bottom: 1.5rem ;
+    }
+    .square {
+        width: 50px;
+        font-size: 1.25rem;
+    }
+    .info__list__container {
+        padding: 1rem;
+      }
+}

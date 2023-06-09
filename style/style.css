@@ -3,7 +3,7 @@
 @import url("./squares.css");
 @import url("./intro.css");
 @import url("./info.css");
-
+@import url("./mobile.css");
 
 *{
     margin: 0;
