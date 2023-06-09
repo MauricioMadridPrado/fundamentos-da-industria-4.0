@@ -1,0 +1,13 @@
+footer{
+    margin: 3rem 0;
+}
+
+footer p{
+    font-size: 1.25rem;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
