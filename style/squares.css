@@ -3,6 +3,7 @@
   margin-bottom: -1px;
   display: flex;
   gap: 1rem;
+  
 }
 
 .square {
@@ -29,4 +30,7 @@
 .third {
 }
 .fourth {
+}
+.light{
+  box-shadow: 0 0 0.5rem 0.1rem black;
 }
