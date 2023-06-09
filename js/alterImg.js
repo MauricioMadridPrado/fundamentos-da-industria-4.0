@@ -1,5 +1,6 @@
 import { addImage } from "./addImage.js";
 let n = 0;
+
 let l;
 
 export function alterImg() {

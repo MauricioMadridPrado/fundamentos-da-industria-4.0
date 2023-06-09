@@ -1,17 +1,17 @@
+import { content } from "./intro.js";
+
 export function addImage(n, l) {
+    
+  let rev;
+    content.forEach(item =>{
+      (item.rev == localStorage.getItem("rev")) ?rev = item.rev: "";
+    })
     localStorage.getItem("rev");
-  
-    let rev;
-  
-    if (localStorage.getItem("rev") == "primeiraRev") rev = "primeira_rev_ind";
-    if (localStorage.getItem("rev") == "segundaRev") rev = "segunda_rev_ind";
-    if (localStorage.getItem("rev") == "terceiraRev") rev = "terceira_rev_ind";
-    if (localStorage.getItem("rev") == "quartaRev") rev = "quarta_rev_ind";
-  
+
     const containerImg = document.querySelector(".intro__img__container");
     const imgSlide = [
-      { transform: `translate${l}(150px)` },
-      { transform: `translate${l}(0px)` },
+      { transform: `translate${l}(50px)`, opacity:0 },
+      { transform: `translate${l}(0px)`, opacity:1  },
     ];
   
     const imgTime = {
