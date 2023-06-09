@@ -6,7 +6,7 @@
     border: 2px solid black;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem 0.1rem black;
-    height: 300px;
+    height: 500px;
 }
 .intro__text {
     padding: 1rem;
@@ -20,4 +20,9 @@
 }
 .intro__img__container img{
     width: 350px;
+}
+@media (max-width: 1000px) {
+    .intro {
+        flex-direction: column;
+    }
 }
