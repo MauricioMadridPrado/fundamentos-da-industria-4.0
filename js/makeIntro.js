@@ -1,9 +1,6 @@
 import { content } from "./intro.js";
 import { alterImg } from "./alterImg.js";
 export let n;
-
-
-
 setInterval(alterImg, 3000);
 
 const introContent = document.querySelector('[data-intro="content"]');
